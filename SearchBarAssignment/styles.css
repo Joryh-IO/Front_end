@@ -1,0 +1,11 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(#fd746c,#ff9068);
+}
+
+#userinput{
+    size: 500px;
+}
