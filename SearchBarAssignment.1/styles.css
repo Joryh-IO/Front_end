@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.container{
+    position: relative;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 4px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    /* border: 1px black solid ; */
+    /* background-color: aliceblue; */
+    display: inline;
+}
+
+input{
+    position: relative;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 480px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+button{
+    height: 45px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 2px black solid ;
+}
+button:hover{
+    background-color: rgb(211, 107, 69);
+}
+
