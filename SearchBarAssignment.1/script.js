@@ -20,6 +20,11 @@ function fun(){
     if(a=="")document.getElementById("12").innerHTML="";
     }
 
+
+function lmao(){
+    window.alert("Lmao dumbass");
+}
+
 var contries = [
     'Afghanistan',
     'Albania',
