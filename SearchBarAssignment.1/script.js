@@ -1,6 +1,5 @@
 function fun(){
     document.getElementById("12").innerHTML="";
-    // div1.remove();
     var a = document.getElementsByTagName("input")[0].value.toLowerCase();
     // window.alert("hello mf");
     console.log(a);
