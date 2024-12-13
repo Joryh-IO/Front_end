@@ -58,8 +58,30 @@ p{
     display: flex;
     flex-direction: row;
     justify-content:  space-evenly;
-    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgb(23, 113, 33);
+    /* border: 2px rgb(255, 255, 255) solid; */
     border-radius: 20px;
     margin: 10px;
     padding: 20px;
+}
+
+button{
+    all: unset;
+    padding: 3px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(1, 255, 99, 0.605); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+button:active{
+    color: rgb(0, 234, 255);
 }

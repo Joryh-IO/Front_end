@@ -17,13 +17,27 @@
         </div>
     </div>
     <footer>
+        <div class="border toggle">
+            <button onclick="f('flex-start')">flex-start</button>
+            <button onclick="f('flex-end')">flex-end</button>
+            <button onclick="f('center')">center</button>
+            <button onclick="f('space-between')">space-between</button>
+            <button onclick="f('space-around')">space-around</button>
+            <button onclick="f('space-evenly')">space-evenly</button>
+        </div>
         <div class="border">
-            <button>flex-start</button>
-            <button>flex-end</button>
-            <button>center</button>
-            <button>space-between</button>
-            <button>space-around</button>
-            <button>space-evenly</button>
+            <button onclick="f2('row')">row</button>
+            <button onclick="f2('row-reverse')">row-reverse</button>
+            <button onclick="f2('column'); tog(event)">column</button>
+            <button onclick="f2('column-reverse'); tog(event)">column-reverse</button>
+
+        </div>
+        <div class="border">
+            <button onclick="f3('flex-start')">flex-start</button>
+            <button onclick="f3('flex-end')">flex-end</button>
+            <button onclick="f3('center')">center</button>
+            <button onclick="f3('stretch')">stretch</button>
+            <button onclick="f3('baseline')">baseline</button>
         </div>
         
     </footer>
