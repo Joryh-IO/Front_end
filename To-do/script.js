@@ -46,7 +46,7 @@ function ed(event){
     var stuff = event.target.parentElement.querySelector("p").innerHTML;
     console.log(stuff);
     var outin = document.getElementById("textbox").value;
-    outin = "wtf";
+    //outin = "wtf";
     document.getElementById("textbox").value=stuff;
     del(event);
 }
