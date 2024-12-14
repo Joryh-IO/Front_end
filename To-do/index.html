@@ -8,16 +8,54 @@
 </head>
 <body>
     <div class="navbar">
-        <h2>To-Do</h2>
-        <h4>lists</h4>
+        <div class="mini">
+            <h2>To-Do</h2>
+            <h4>lists</h4>
+        </div>
+        <div class="nav-left">
+            <button onclick="tog()">Create new</button>
+        </div>
     </div>
+
+    <div class="dropmenu">
+        <form>
+            <table>
+                <tr>
+                    <td>To-do:</td>
+                    <td><input type="text" id="textbox"></td>
+                </tr>
+                <tr>
+                    <td>Priority:</td>
+                    <td>
+                        <input type="radio"  name="priority" value="low" onclick="rad(event)"><label>low</label>
+                        <input type="radio"  name="priority" value="medium" onclick="rad(event)"><label>medium</label>
+                        <input type="radio"  name="priority" value="high" onclick="rad(event)"><label>high</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset" onclick="assign()">Done</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+
     <div class="container">
+
+
+
+        
         <div class="item">
             <h6>to-do:</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet sagittis maximus. Quisque accumsan nisi dui, et fermentum justo auctor faucibus. Proin dictum sagittis diam, eget iaculis libero convallis in. Sed at efficitur erat. Quisque pellentesque semper leo, pretium condimentum nibh consequat sit amet. In id iaculis mauris. Aliquam luctus purus vitae pulvinar tempus. Ut ornare, quam nec venenatis auctor, arcu libero tempor risus, vitae pharetra felis felis eget mauris. Cras id pretium neque. Vestibulum laoreet tellus gravida, ullamcorper mauris at, blandit elit. Duis cursus auctor pulvinar. Integer ut risus ac risus cursus pulvinar. Vivamus vulputate lacinia lorem, sit amet ullamcorper mi venenatis quis.</p>
-            <button>Edit</button>
-            <button>Delete</button>
+            <p>Finish todo list application</p>
+            <button onclick="ed(event)">Edit</button>
+            <button onclick="del(event)">Delete</button>
         </div>
+        
+
+
     </div>
 </body>
 <script src="script.js"></script>

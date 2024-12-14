@@ -1,9 +1,17 @@
 body{
     margin: 0;
+    background-image: 
+    url("./Grid\ 03.svg");
+    /* background-repeat: no-repeat; */
+    /* background-size: 1800px; */
 }
 
 .navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row;
+    align-items: baseline; */
     background-color: rgb(230, 166, 46);
     overflow: hidden;
 }
@@ -13,17 +21,63 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.mini{
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-left{
+    cursor: pointer;
+    width:auto;
+    padding: 0px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.nav-left:hover{
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.nav-left:active{
+    background-color: rgb(236, 217, 120);
+    
+}
+
 .navbar h4{
-    margin-left: 4px;
-    margin-bottom: 0;
-    margin-top: 28.5px;
     color: rgba(0, 0, 0, 0.655);
+}
+
+
+.navbar button{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+    font-size: larger;
+    /* text-decoration: none; */
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.397);
+    background-color: rgb(230, 166, 46);
+    border-radius: 18px;
+}
+
+.navbar button:hover{
+    background-color: antiquewhite;
+}
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 80px;
 }
 
 .item{
     margin: 10px;
-    width: 300px;
-    /* height: 80px; */
+    width: 250px;
     background-color: rgb(255, 211, 100);
     border-radius: 8px;
     overflow: hidden;
@@ -43,4 +97,33 @@ body{
 .item p{
     margin: 0;
     padding: 8px;
+}
+
+.item button{
+    margin: 0px 0px 10px 10px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+.dropmenu{
+    position: fixed;
+    z-index: 1;
+    top: 1;
+    right: -300px;
+    width: fit-content;
+    height: fit-content;
+    /* height: 100px; */
+    background-color: rgb(230, 166, 46);
+    padding: 8px;
+    transition: 0.5s;
+}
+/* padding and height have to be altered */
+
+.dropmenu table{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3ss;
+    /* need to hide display too */
 }
